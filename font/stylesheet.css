@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SVN-Zebra';
+    src: url('SVN-Zebra.eot');
+    src: url('SVN-Zebra.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Zebra.woff2') format('woff2'),
+        url('SVN-Zebra.woff') format('woff'),
+        url('SVN-Zebra.ttf') format('truetype'),
+        url('SVN-Zebra.svg#SVN-Zebra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Block';
+    src: url('SVN-Block.eot');
+    src: url('SVN-Block.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Block.woff2') format('woff2'),
+        url('SVN-Block.woff') format('woff'),
+        url('SVN-Block.ttf') format('truetype'),
+        url('SVN-Block.svg#SVN-Block') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

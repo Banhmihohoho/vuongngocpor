@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VuongNgoc</title>
+<link rel="icon" href="images/title icon.svg">
+<link rel="stylesheet" href="css/MAIN-STYLE.css">
+<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    
+	
+	<nav> 
+ <div class="container">
+ <a href="index.html" class="nav-brand">My Portfolio</a>
+  <button type="button" class="btn-toggle">
+  <span class="fa-solid fa-bars fa-lg"> </span>
+  
+  </button>
+	 <div id="menu">
+	 <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#" id="btn-dropdown">About <span class="fa-solid fa-angle-down"></span></a>
+		  <ul id="dropdown-menu">
+		    <li><a href="about.html#cv">Experience&nbsp;</a></li>
+		    <li><a href="skills.html#skills">Skills</a></li>
+		    <li><a href="Testimonials.html#tes">Testimonials</a></li>
+	      </ul>
+		</li>
+		 
+		<li><a href="service.html">Services&nbsp;</a></li>
+		<li><a href="project.html">Projects&nbsp;</a></li>
+		<li><a href="team.html">Pricing&nbsp;</a></li>
+		<li><a href="contact.html">Contact&nbsp;</a></li>
+	</ul>
+		 
+ </div>
+ </div>
+ </nav>
+
+    <section class="td-trang">
+        <div class="text-center">
+            <h1 class="text-dark">&nbsp;Testimonials&nbsp;</h1>
+            <h4 class="font-moi">about&nbsp; <span>&#8594;</span> &nbsp; testimonials</h4>
+        </div>
+    </section>
+    
+    <section id="testimonial">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-items">
+            <div class="testimonial-item">
+                <p>""Never mind, I'll find someone like you, I wish nothing but the best for you, too.""</p>
+                <h4>-Adele</h4>
+                <p>CEO of Company XYZ</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I can't sleep until I feel your touch, I said, ooh, I'm drowning in the night, Oh, when I'm like this, you're the one I trust."</p>
+                <h4>- The Weeknd</h4>
+                <p>Marketing Director at ABC Corp.</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I'm the bad guy, Duh."</p>
+                <h4>- Billie Eilish</h4>
+                <p>Freelancer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="container counter-container">
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-6 col-12">
+            <p class="counter" id="counter1">0</p>
+            <p>Successful Projects</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <p class="counter" id="counter2">0</p>
+            <p>Satisfied Clients</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <p class="counter" id="counter3">0</p>
+            <p>Cups of Coffee Consumed</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <p class="counter" id="counter4">0</p>
+            <p>Dedicated Professionals</p>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h4 class="font-moi">About Me</h4>
+                    <p>I’m a web and graphic designer, focused on creating visually appealing and user-friendly designs that help businesses thrive online.</p>
+                    <p><small><i><em>Copyright ©2024 All rights reserved | This template is made with  by Vuong Ngoc</em></i></small></p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h4 class="font-moi">Contact Me</h4>
+                    <p><i class="fa-brands fa-facebook"></i>  /KoeChope</p>
+                    <p><i class="fa-solid fa-envelope"></i>  beijingkaoya@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-alt"></i> 0822303091</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h4 class="font-moi">My Social</h4>
+                    <p class="i-ss">
+                        <a href="https://www.facebook.com/KoeChope/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+				<a href="https://www.instagram.com/" ><i class="fa-brands fa-instagram fa-2xl"></i></a>
+				<a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a>
+				<a href="https://www.threads.net/" target="_blank"><i class="fa-brands fa-threads fa-2xl"></i></a>
+			
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownButton = document.getElementById("btn-dropdown");
+            const dropdownMenu = document.getElementById("dropdown-menu");
+
+            dropdownButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                dropdownMenu.classList.toggle("show"); 
+            });
+
+            document.addEventListener("click", function(event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");  
+                }
+            });
+        });
+
+        // Counter functionality
+        function countUp(id, target, speed) {
+            let start = 0;
+            const element = document.getElementById(id);
+            let interval = setInterval(function() {
+                start += 1;
+                element.innerText = start;
+                if (start >= target) {
+                    clearInterval(interval);
+                }
+            }, speed);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            countUp("counter1",150, 10);  
+            countUp("counter2", 120, 15); 
+            countUp("counter3", 321, 5);  
+            countUp("counter4", 50, 15);  
+        });
+		
+		
+    </script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".btn-toggle").click(function(){
+    $("#menu").slideToggle("slow");
+  });
+
+		$("#btn-dropdown").click(function(){
+		$("#dropdown-menu").slideToggle("slow");
+	  });	
+});
+</script>
+</body>
+</html>
